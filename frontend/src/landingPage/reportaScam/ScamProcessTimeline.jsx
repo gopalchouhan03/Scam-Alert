@@ -25,7 +25,7 @@ const ScamProcessTimeline = () => {
         <strong>Note:</strong> "We don’t share your personal data without consent."
       </p>
       <div className="text-center">
-        <a href="" className="btn btn-primary">View Privacy Policy</a>
+        <button className="btn btn-primary">View Privacy Policy</button>
       </div>
     </div>
   );

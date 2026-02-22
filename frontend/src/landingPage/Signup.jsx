@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
@@ -10,7 +8,6 @@ const [password, setPassword] = useState("");
 const [confirmPassword, setConfirmPassword] = useState("");
 const [showPassword, setShowPassword] = useState(false);
 const [agree, setAgree] = useState(false);
-const [message, setMessage] = useState("");
 
 const getPasswordStrength = () => {
 if (password.length > 8) return "strong";
@@ -128,7 +125,7 @@ return (
           required
         />
         <label className="form-check-label">
-          I agree to <a href="#">Terms & Privacy Policy</a>
+          I agree to <button className="btn-link-style">Terms & Privacy Policy</button>
         </label>
       </div>
 
@@ -141,7 +138,7 @@ return (
 
     <div className="text-center">
       <small>
-        Already have an account? <a href="#" className="fw-bold">Log in here</a>
+        Already have an account? <button className="btn-link-style fw-bold">Log in here</button>
       </small>
     </div>
 

@@ -270,3 +270,37 @@ code {
   font-size: 0.9rem;
   color: #aaa;
 }
+
+/* Scrolling alerts (replaces marquee) */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scam-scroll {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+  white-space: nowrap;
+}
+
+/* Button link styling */
+.btn-link-style {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.btn-link-style:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}

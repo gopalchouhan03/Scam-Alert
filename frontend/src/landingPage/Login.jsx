@@ -71,7 +71,7 @@ return (
           required
         />
         <label className="form-check-label">
-          I agree to <a href="#">Terms & Privacy Policy</a>
+          I agree to <button className="btn-link-style">Terms & Privacy Policy</button>
         </label>
       </div>
         <Link to="/" className="btn btn-primary w-100">Login</Link>

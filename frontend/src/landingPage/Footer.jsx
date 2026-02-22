@@ -5,15 +5,15 @@ function Footer() {
     <footer className="footer">
       <div className="container text-center">
         <div className="footer-links">
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms</a>
+          <button className="btn-link-style">About</button>
+          <button className="btn-link-style">Contact</button>
+          <button className="btn-link-style">Privacy Policy</button>
+          <button className="btn-link-style">Terms</button>
         </div>
         <div className="social-icons">
-          <a href="#"><i className="fab fa-twitter"></i></a>
-          <a href="#"><i className="fab fa-facebook-f"></i></a>
-          <a href="#"><i className="fab fa-telegram-plane"></i></a>
+          <button className="btn-link-style"><i className="fab fa-twitter"></i></button>
+          <button className="btn-link-style"><i className="fab fa-facebook-f"></i></button>
+          <button className="btn-link-style"><i className="fab fa-telegram-plane"></i></button>
         </div>
         <p className="copyright">© 2025 ScamAlert. All rights reserved.</p>
       </div>

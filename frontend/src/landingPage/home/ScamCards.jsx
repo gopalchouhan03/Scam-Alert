@@ -44,7 +44,7 @@ function ScamCards() {
                 <h4>{scam.title}</h4>
                 <p className={`risk-level ${scam.color}`}>{scam.risk} Risk {scam.stars}</p>
                 <p>{scam.description}</p>
-                <a href="#" className="btn btn-outline-light">Read Details</a>
+                <button className="btn btn-outline-light">Read Details</button>
               </div>
             </div>
           ))}
