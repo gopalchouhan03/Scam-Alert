@@ -9,7 +9,7 @@ const QuizPage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/prevention/quiz/${scamType}`)
+      .get(`https://scam-alert-backend.onrender.com/api/prevention/quiz/${scamType}`)
       .then((res) => setQuiz(res.data))
       .catch((err) => console.error("Error fetching quiz:", err));
   }, [scamType]);

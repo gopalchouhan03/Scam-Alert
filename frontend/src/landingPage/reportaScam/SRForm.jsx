@@ -37,7 +37,7 @@ const SRForm = () => {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/scams', {
+      const res = await fetch('https://scam-alert-backend.onrender.com/api/scams', {
         method: 'POST',
         body: form
       });

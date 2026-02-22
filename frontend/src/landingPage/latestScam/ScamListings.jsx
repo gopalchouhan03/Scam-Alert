@@ -11,7 +11,7 @@ function ScamListings() {
     const fetchScams = async () => {
       try {
         const params = new URLSearchParams({ search, scamType, sort });
-        const res = await fetch(`http://localhost:5000/api/scams?${params}`);
+        const res = await fetch(`https://scam-alert-backend.onrender.com/api/scams?${params}`);
         const data = await res.json();
         setScams(data);
       } catch (err) {

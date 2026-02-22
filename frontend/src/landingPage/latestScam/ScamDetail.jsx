@@ -7,14 +7,14 @@ const ScamDetail = () => {
   const [tips, setTips] = useState(null); // ✅ New state for prevention tips
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/scams/${id}`)
+    fetch(`https://scam-alert-backend.onrender.com/api/scams/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setScam(data);
 
         // Fetch prevention tips based on scamType
         if (data.scamType) {
-          fetch(`http://localhost:5000/api/prevention/type/${data.scamType}`)
+          fetch(`https://scam-alert-backend.onrender.com/api/prevention/type/${data.scamType}`)
             .then((res) => res.json())
             .then((tipData) => setTips(tipData))
             .catch((err) => console.error("Error fetching tips:", err));
@@ -43,7 +43,7 @@ const ScamDetail = () => {
             <ul>
               {scam.attachments.map((file, idx) => (
                 <li key={idx}>
-                  <a href={`http://localhost:5000/uploads/${file.filename}`} target="_blank" rel="noopener noreferrer">
+                  <a href={`https://scam-alert-backend.onrender.com/uploads/${file.filename}`} target="_blank" rel="noopener noreferrer">
                     {file.originalname || file.filename}
                   </a>
                 </li>

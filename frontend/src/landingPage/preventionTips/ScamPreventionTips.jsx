@@ -7,7 +7,7 @@ const PreventionTips = () => {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/prevention")
+    axios.get("https://scam-alert-backend.onrender.com/api/prevention")
       .then(res => setTips(res.data))
       .catch(err => console.error("Error loading tips:", err));
   }, []);
