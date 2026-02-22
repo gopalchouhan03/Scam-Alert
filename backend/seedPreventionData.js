@@ -7,7 +7,7 @@ const ScamType = require('./models/ScamType');
 const PreventionTip = require('./models/PreventionTip');
 const Quiz = require('./models/Quiz');
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/scam-alert';
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/scam-alert';
 
 const scamTypes = [
   'Phishing',

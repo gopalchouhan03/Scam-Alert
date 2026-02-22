@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
 try {
-await mongoose.connect("mongodb://localhost:27017/scam-alert", {
+await mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/scam-alert", {
 useNewUrlParser: true,
 useUnifiedTopology: true,
 });
