@@ -8,6 +8,7 @@ const [password, setPassword] = useState("");
 const [confirmPassword, setConfirmPassword] = useState("");
 const [showPassword, setShowPassword] = useState(false);
 const [agree, setAgree] = useState(false);
+const [message] = useState("");
 
 const getPasswordStrength = () => {
 if (password.length > 8) return "strong";
